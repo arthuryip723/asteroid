@@ -1,0 +1,15 @@
+<canvas id="game-canvas" width="800" height="600"></canvas>
+<script src="movingObject.js"></script>
+<script src="util.js"></script>
+<script src="asteroid.js"></script>
+<script src="ship.js"></script>
+<script src="game.js"></script>
+<script src="gameView.js"></script>
+<script src="keymaster.js"></script>
+<script src="bullet.js"></script>
+<script>
+var canvas = document.getElementById("game-canvas");
+var ctx = canvas.getContext("2d");
+var game = new Asteroids.Game();
+new Asteroids.GameView(game, ctx).start();
+</script>
